@@ -1,0 +1,152 @@
+import Link from "next/link";
+import type { IconName } from "../lib/data";
+
+type P = { className?: string };
+const base = {
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 1.4,
+  strokeLinecap: "round" as const,
+  strokeLinejoin: "round" as const,
+  viewBox: "0 0 24 24",
+};
+
+export const ArrowRight = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <path d="M4 12h15M13 6l6 6-6 6" />
+  </svg>
+);
+
+export const ArrowLeft = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <path d="M20 12H5M11 6l-6 6 6 6" />
+  </svg>
+);
+
+export const ArrowDown = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <path d="M12 4v15M6 13l6 6 6-6" />
+  </svg>
+);
+
+export const ArrowUpRight = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <path d="M7 17L17 7M8 7h9v9" />
+  </svg>
+);
+
+export const Chevron = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <path d="M6 9l6 6 6-6" />
+  </svg>
+);
+
+export const Close = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <path d="M6 6l12 12M18 6L6 18" />
+  </svg>
+);
+
+export const Search = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <circle cx="11" cy="11" r="7" />
+    <path d="M20 20l-4-4" />
+  </svg>
+);
+
+export const Phone = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2" />
+  </svg>
+);
+
+export const Mail = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <rect x="3" y="5" width="18" height="14" rx="2" />
+    <path d="M3 7l9 6 9-6" />
+  </svg>
+);
+
+export const Pin = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <path d="M12 21s-7-6.2-7-12a7 7 0 0114 0c0 5.8-7 12-7 12z" />
+    <circle cx="12" cy="9" r="2.5" />
+  </svg>
+);
+
+export const Clock = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <circle cx="12" cy="12" r="9" />
+    <path d="M12 7v5l3 2" />
+  </svg>
+);
+
+export const Pillar = ({ className }: P) => (
+  <svg viewBox="0 0 40 40" fill="currentColor" className={className} aria-hidden="true">
+    <path d="M4 7h32v3H4zM6 4h28l2 3H4zM7 11h26v2H7z" />
+    <path d="M9 14h3v19H9zM15.5 14h3v19h-3zM21.5 14h3v19h-3zM28 14h3v19h-3z" />
+    <path d="M7 33h26v2H7zM4 35.5h32V38H4z" />
+  </svg>
+);
+
+export function PracticeIcon({ name, className }: P & { name: IconName }) {
+  const paths: Record<IconName, React.ReactNode> = {
+    briefcase: (
+      <>
+        <rect x="3" y="7" width="18" height="13" rx="2" />
+        <path d="M9 7V5a1 1 0 011-1h4a1 1 0 011 1v2M3 12h18M11 12v2h2v-2" />
+      </>
+    ),
+    scales: (
+      <>
+        <path d="M12 3v18M7 21h10M5 6h14M12 4.5l0 1.5" />
+        <path d="M5 6l-3 7a3 3 0 006 0zM19 6l-3 7a3 3 0 006 0z" />
+      </>
+    ),
+    family: (
+      <>
+        <circle cx="8" cy="7" r="2.5" />
+        <circle cx="16" cy="7" r="2.5" />
+        <circle cx="12" cy="12" r="2" />
+        <path d="M3 19c0-3 2.2-5.5 5-5.5M21 19c0-3-2.2-5.5-5-5.5M8 20c0-2.5 1.8-4.5 4-4.5s4 2 4 4.5" />
+      </>
+    ),
+    home: (
+      <>
+        <path d="M3 11l9-7 9 7" />
+        <path d="M5 10v10h14V10M10 20v-6h4v6" />
+      </>
+    ),
+    doc: (
+      <>
+        <path d="M14 3H6a1 1 0 00-1 1v16a1 1 0 001 1h12a1 1 0 001-1V8z" />
+        <path d="M14 3v5h5M8.5 12h7M8.5 15h7M8.5 18h4" />
+      </>
+    ),
+  };
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      {paths[name]}
+    </svg>
+  );
+}
+
+export function Logo({ className = "" }: { className?: string }) {
+  return (
+    <Link href="/" aria-label="Lexora Law Firm — home" className={`inline-flex items-center gap-3 ${className}`}>
+      <Pillar className={"size-9 text-gold"} />
+      <span className="flex flex-col leading-none">
+        <span
+          className={"font-serif text-[27px] font-semibold text-ink"}
+        >
+          Lexora
+        </span>
+        <span
+          className={"mt-1 text-[10px] tracking-[0.32em] text-muted uppercase"}
+        >
+          Law Firm
+        </span>
+      </span>
+    </Link>
+  );
+}
