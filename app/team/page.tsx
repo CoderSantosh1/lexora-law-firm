@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { CtaBanner, PageHero, SectionHeading } from "../components/Blocks";
-import { Parallax, Reveal } from "../components/Motion";
+import CtaBanner from "../components/sections/CtaBanner";
+import PageHero from "../components/sections/PageHero";
+import SectionHeading from "../components/sections/SectionHeading";
+import Parallax from "../components/motion/Parallax";
+import Reveal from "../components/motion/Reveal";
 import { IMAGES, TEAM } from "../lib/data";
 
 export const metadata: Metadata = { title: "Our Team" };
@@ -11,9 +14,9 @@ export default function TeamPage() {
     <>
       <PageHero eyebrow="The counsel" title="Our Team" line="Forty minds. One table." image={IMAGES.meetingTeam} />
 
-      <section className="shell py-24 sm:py-32">
+      <section className="shell py-16 px-10">
         <SectionHeading eyebrow="Partners & associates" title="Meet the" accent="Attorneys" />
-        <div className="mt-14 grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-4">
+        <div className="mt-[clamp(40px,4.5vw,56px)] grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-4">
           {TEAM.map((m, i) => (
             <Reveal key={m.name} as="figure" delay={(i % 4) * 110} className="group">
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
@@ -40,7 +43,7 @@ export default function TeamPage() {
         <Parallax>
           <Image src={IMAGES.meetingTable} alt="" fill sizes="100vw" className="object-cover" />
         </Parallax>
-        <div className="shell relative flex h-full items-end pb-10 sm:pb-16">
+        <div className="shell relative flex h-full items-end pb-[clamp(40px,4.5vw,56px)]">
           <Reveal className="max-w-md rounded-2xl bg-ivory/95 p-8 backdrop-blur-sm sm:p-10">
             <p className="font-serif text-[clamp(30px,3.6vw,46px)] leading-[1.1]">
               Every case gets <em className="text-gold">a partner</em>, not a file number.

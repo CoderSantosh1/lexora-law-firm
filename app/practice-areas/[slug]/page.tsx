@@ -3,9 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import { CtaBanner, PageHero, SectionHeading } from "../../components/Blocks";
-import { ArrowRight, PracticeIcon } from "../../components/Icons";
-import { Reveal } from "../../components/Motion";
+import CtaBanner from "../../components/sections/CtaBanner";
+import PageHero from "../../components/sections/PageHero";
+import SectionHeading from "../../components/sections/SectionHeading";
+import { ArrowRight, PracticeIcon } from "../../components/ui/Icons";
+import Reveal from "../../components/motion/Reveal";
 import { PRACTICE } from "../../lib/data";
 
 export function generateStaticParams() {
@@ -28,7 +30,7 @@ export default function PracticeDetailPage({ params }: PageProps<"/practice-area
 
 function DetailSkeleton() {
   return (
-    <section className="shell pt-[96px]">
+    <section className="shell pt-24">
       <div className="h-[min(78svh,760px)] min-h-[460px] animate-pulse rounded-2xl bg-sand" />
     </section>
   );
@@ -46,10 +48,10 @@ async function PracticeDetail({ params }: Pick<PageProps<"/practice-areas/[slug]
       <PageHero eyebrow="Practice Area" title={area.title} line={area.line} image={area.image} />
 
       {/* Services + photo */}
-      <section className="shell grid items-start gap-16 py-24 sm:py-32 lg:grid-cols-2">
+      <section className="shell grid items-start gap-16 py-[clamp(72px,9vw,128px)] lg:grid-cols-2">
         <div>
           <SectionHeading eyebrow="How we help" title="Our" accent="Services" />
-          <ul className="mt-10 border-t border-line">
+          <ul className="mt-[clamp(40px,4.5vw,56px)] border-t border-line">
             {area.services.map((s, i) => (
               <Reveal as="li" key={s} delay={i * 70}>
                 <Link
@@ -81,9 +83,9 @@ async function PracticeDetail({ params }: Pick<PageProps<"/practice-areas/[slug]
       </section>
 
       {/* Other areas */}
-      <section className="shell pt-24 sm:pt-32">
+      <section className="shell py-16 px-10">
         <SectionHeading eyebrow="Explore" title="Other" accent="Areas" />
-        <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <div className="mt-[clamp(40px,4.5vw,56px)] grid grid-cols-2 gap-4 lg:grid-cols-4">
           {others.map((p, i) => (
             <Reveal key={p.slug} delay={i * 100}>
               <Link href={`/practice-areas/${p.slug}`} className="group relative block aspect-[4/5] overflow-hidden rounded-2xl">

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { CtaBanner, PageHero } from "../components/Blocks";
-import { Reveal } from "../components/Motion";
+import CtaBanner from "../components/sections/CtaBanner";
+import PageHero from "../components/sections/PageHero";
+import Reveal from "../components/motion/Reveal";
 import { IMAGES, INSIGHTS } from "../lib/data";
 
 export const metadata: Metadata = { title: "Insights" };
@@ -13,7 +14,7 @@ export default function InsightsPage() {
     <>
       <PageHero eyebrow="Journal" title="Insights" line="Short reads from our attorneys." image={IMAGES.documents} />
 
-      <section className="shell py-24 sm:py-32">
+      <section className="shell py-16 px-10">
         {/* Featured article */}
         <Reveal as="article" className="group grid items-center gap-10 lg:grid-cols-[1.4fr_1fr]">
           <div className="relative aspect-[16/10] overflow-hidden rounded-2xl">
@@ -33,7 +34,7 @@ export default function InsightsPage() {
         </Reveal>
 
         {/* Article grid */}
-        <div className="mt-20 grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-[clamp(72px,9vw,128px)] grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
           {rest.map((a, i) => (
             <Reveal key={a.title} as="article" delay={(i % 3) * 120} className="group">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">

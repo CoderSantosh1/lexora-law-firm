@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CtaBanner, ImageMarquee, SectionHeading } from "./components/Blocks";
-import Hero from "./components/Hero";
-import { ArrowRight, PracticeIcon } from "./components/Icons";
-import { Counter, Parallax, Reveal } from "./components/Motion";
+import CtaBanner from "./components/sections/CtaBanner";
+import ImageMarquee from "./components/sections/ImageMarquee";
+import SectionHeading from "./components/sections/SectionHeading";
+import Hero from "./components/sections/Hero";
+import { ArrowRight, PracticeIcon } from "./components/ui/Icons";
+import Counter from "./components/motion/Counter";
+import Parallax from "./components/motion/Parallax";
+import Reveal from "./components/motion/Reveal";
 import { IMAGES, INSIGHTS, PRACTICE, STATS, TEAM } from "./lib/data";
 
-const WORDS = ["Corporate", "Litigation", "Family", "Real Estate", "Advisory", "Arbitration"];
 
 export default function Home() {
   return (
@@ -14,7 +17,7 @@ export default function Home() {
       <Hero />
 
       {/* Intro — three-photo collage */}
-      <section id="intro" className="shell grid scroll-mt-20 items-center gap-16 py-24 sm:py-32 lg:grid-cols-2">
+      <section id="intro" className="shell grid scroll-mt-20 items-center gap-16 py-16 px-10 lg:grid-cols-2">
         <div>
           <SectionHeading eyebrow="Since 1998" title="Counsel with" accent="character." />
           <Reveal delay={150}>
@@ -40,25 +43,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Word marquee */}
-      <div className="overflow-hidden border-y border-line bg-sand py-7" aria-hidden="true">
-        <div className="flex w-max animate-marquee">
-          {[...WORDS, ...WORDS, ...WORDS, ...WORDS].map((w, i) => (
-            <span
-              key={i}
-              className={`flex items-center gap-10 pr-10 font-serif text-[clamp(36px,5vw,64px)] italic ${
-                i % 2 ? "text-gold" : "text-transparent [-webkit-text-stroke:1px_var(--color-gold)]"
-              }`}
-            >
-              {w}
-              <i className="text-[0.35em] text-gold not-italic">✦</i>
-            </span>
-          ))}
-        </div>
-      </div>
-
       {/* Practice areas — tall photo cards */}
-      <section className="shell py-24 sm:py-32">
+      <section className="shell py-16 px-10">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="What we do" title="Practice" accent="Areas" />
           <Reveal>
@@ -67,7 +53,7 @@ export default function Home() {
             </Link>
           </Reveal>
         </div>
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-[clamp(40px,4.5vw,56px)] grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {PRACTICE.map((p, i) => (
             <Reveal key={p.slug} delay={i * 90} className={i === 0 ? "sm:col-span-2 lg:col-span-1" : ""}>
               <Link
@@ -101,7 +87,7 @@ export default function Home() {
         <Parallax>
           <Image src={IMAGES.columns} alt="" fill sizes="100vw" className="object-cover" />
         </Parallax>
-        <div className="shell relative flex h-full items-end justify-end pb-10 sm:pb-16">
+        <div className="shell relative flex h-full items-end justify-end pb-[clamp(40px,4.5vw,56px)]">
           <Reveal className="max-w-md rounded-2xl bg-ivory/95 p-8 backdrop-blur-sm sm:p-10">
             <p className="font-serif text-[clamp(30px,3.6vw,46px)] leading-[1.1] italic">
               “Excellence is not an act, <span className="text-gold">it is our habit.</span>”
@@ -116,7 +102,7 @@ export default function Home() {
           <Reveal
             key={s.label}
             delay={i * 120}
-            className={`py-14 text-center ${i % 2 ? "border-l border-line" : ""} ${i === 2 ? "lg:border-l" : ""} ${i > 1 ? "border-t border-line lg:border-t-0" : ""}`}
+            className={`py-[clamp(40px,4.5vw,56px)] text-center ${i % 2 ? "border-l border-line" : ""} ${i === 2 ? "lg:border-l" : ""} ${i > 1 ? "border-t border-line lg:border-t-0" : ""}`}
           >
             <p className="font-serif text-[clamp(48px,5vw,72px)] leading-none font-semibold text-gold">
               <Counter value={s.value} suffix={s.suffix} />
@@ -127,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* Team preview */}
-      <section className="shell py-24 sm:py-32">
+      <section className="shell py-16 px-10">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="The counsel" title="Meet the" accent="Team" />
           <Reveal>
@@ -136,7 +122,7 @@ export default function Home() {
             </Link>
           </Reveal>
         </div>
-        <div className="mt-14 grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <div className="mt-[clamp(40px,4.5vw,56px)] grid grid-cols-2 gap-4 lg:grid-cols-4">
           {TEAM.slice(0, 4).map((m, i) => (
             <Reveal key={m.name} as="figure" delay={i * 120} className="group">
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
@@ -161,7 +147,7 @@ export default function Home() {
       <ImageMarquee />
 
       {/* Insights preview */}
-      <section className="shell py-24 sm:py-32">
+      <section className="shell py-16 px-10">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="Journal" title="Latest" accent="Insights" />
           <Reveal>
@@ -170,7 +156,7 @@ export default function Home() {
             </Link>
           </Reveal>
         </div>
-        <div className="mt-14 grid gap-8 md:grid-cols-3">
+        <div className="mt-[clamp(40px,4.5vw,56px)] grid gap-8 md:grid-cols-3">
           {INSIGHTS.slice(0, 3).map((a, i) => (
             <Reveal key={a.title} as="article" delay={i * 120} className="group">
               <Link href="/insights" className="block">

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight } from "../components/Icons";
+import { ArrowRight } from "../components/ui/Icons";
 import { PRACTICE } from "../lib/data";
 
 const field =

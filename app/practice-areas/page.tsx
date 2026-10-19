@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { CtaBanner, PageHero } from "../components/Blocks";
-import { ArrowRight, PracticeIcon } from "../components/Icons";
-import { Reveal } from "../components/Motion";
+import CtaBanner from "../components/sections/CtaBanner";
+import PageHero from "../components/sections/PageHero";
+import { ArrowRight, PracticeIcon } from "../components/ui/Icons";
+import Reveal from "../components/motion/Reveal";
 import { IMAGES, PRACTICE } from "../lib/data";
 
 export const metadata: Metadata = { title: "Practice Areas" };
@@ -14,7 +15,7 @@ export default function PracticeAreasPage() {
       <PageHero eyebrow="What we do" title="Practice Areas" line="Five disciplines. One standard." image={IMAGES.library} />
 
       {/* Zig-zag photo rows */}
-      <section className="shell space-y-24 py-24 sm:space-y-32 sm:py-32">
+      <section className="shell space-y-[clamp(72px,9vw,128px)] py-[clamp(72px,9vw,128px)]">
         {PRACTICE.map((p, i) => (
           <div key={p.slug} className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
             <Reveal

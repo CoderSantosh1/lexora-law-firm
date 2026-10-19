@@ -1,5 +1,4 @@
-import Link from "next/link";
-import type { IconName } from "../lib/data";
+import type { IconName } from "../../lib/data";
 
 type P = { className?: string };
 const base = {
@@ -128,25 +127,5 @@ export function PracticeIcon({ name, className }: P & { name: IconName }) {
     <svg {...base} className={className} aria-hidden="true">
       {paths[name]}
     </svg>
-  );
-}
-
-export function Logo({ className = "" }: { className?: string }) {
-  return (
-    <Link href="/" aria-label="Lexora Law Firm — home" className={`inline-flex items-center gap-3 ${className}`}>
-      <Pillar className={"size-9 text-gold"} />
-      <span className="flex flex-col leading-none">
-        <span
-          className={"font-serif text-[27px] font-semibold text-ink"}
-        >
-          Lexora
-        </span>
-        <span
-          className={"mt-1 text-[10px] tracking-[0.32em] text-muted uppercase"}
-        >
-          Law Firm
-        </span>
-      </span>
-    </Link>
   );
 }

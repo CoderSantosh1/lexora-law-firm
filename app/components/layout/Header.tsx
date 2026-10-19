@@ -4,8 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { CONTACT, IMAGES, NAV, PRACTICE } from "../lib/data";
-import { ArrowRight, Chevron, Logo, PracticeIcon } from "./Icons";
+import { CONTACT, IMAGES, NAV, PRACTICE } from "../../lib/data";
+import Logo from "./Logo";
+import { ArrowRight, Chevron, PracticeIcon } from "../ui/Icons";
 
 export default function Header() {
   const pathname = usePathname();

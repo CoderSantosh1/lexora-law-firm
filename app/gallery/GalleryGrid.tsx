@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
-import { ArrowLeft, ArrowRight, Close } from "../components/Icons";
+import { ArrowLeft, ArrowRight, Close } from "../components/ui/Icons";
 import { GALLERY, type GalleryTag } from "../lib/data";
 
 const FILTERS: ("All" | GalleryTag)[] = ["All", "Office", "Courtroom", "Moments"];
@@ -53,7 +53,7 @@ export default function GalleryGrid() {
       </div>
 
       {/* Masonry via CSS columns; `key` re-mounts so the stagger replays on filter change */}
-      <div key={filter} className="mt-12 columns-1 gap-4 sm:columns-2 lg:columns-3">
+      <div key={filter} className="mt-[clamp(40px,4.5vw,56px)] columns-1 gap-4 sm:columns-2 lg:columns-3">
         {items.map((g, i) => (
           <button
             key={g.image}

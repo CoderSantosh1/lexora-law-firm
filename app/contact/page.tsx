@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ImageMarquee } from "../components/Blocks";
-import { Clock, Mail, Phone, Pin } from "../components/Icons";
-import { Parallax, Reveal } from "../components/Motion";
+import ImageMarquee from "../components/sections/ImageMarquee";
+import { Clock, Mail, Phone, Pin } from "../components/ui/Icons";
+import Parallax from "../components/motion/Parallax";
+import { ArrowRight } from "../components/ui/Icons";
+import Reveal from "../components/motion/Reveal";
 import { CONTACT, IMAGES } from "../lib/data";
 import ContactForm from "./ContactForm";
 
@@ -19,7 +21,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Split: photo left, form right */}
-      <section className="shell grid gap-10 pt-[96px] lg:grid-cols-2 lg:gap-16">
+      <section className="shell grid gap-10 pt-24 pb-[clamp(72px,9vw,128px)] lg:grid-cols-2 lg:gap-16">
         <div className="relative h-[60svh] min-h-[420px] overflow-hidden rounded-2xl lg:sticky lg:top-24 lg:h-[calc(100svh-120px)]">
           <div className="absolute inset-0 animate-zoom-out">
             <Image src={IMAGES.officeWindow} alt="Lexora reception" fill preload sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
@@ -30,7 +32,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="py-6 lg:py-16">
+        <div className="lg:py-[clamp(40px,4.5vw,56px)]">
           <div className="animate-rise">
             <p className="flex items-center gap-3 text-[11px] font-medium tracking-[0.3em] text-gold-deep uppercase">
               <span className="h-px w-8 bg-gold" />
@@ -41,7 +43,7 @@ export default function ContactPage() {
             </h1>
           </div>
 
-          <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+          <ul className="mt-[clamp(40px,4.5vw,56px)] grid gap-4 sm:grid-cols-2">
             {DETAILS.map(({ icon: Icon, label, href }, i) => (
               <Reveal as="li" key={label} delay={i * 90}>
                 {href ? (
@@ -59,28 +61,38 @@ export default function ContactPage() {
             ))}
           </ul>
 
-          <Reveal delay={200} className="mt-14">
+          <Reveal delay={200} className="mt-[clamp(40px,4.5vw,56px)]">
             <ContactForm />
           </Reveal>
         </div>
       </section>
 
-      {/* Where to find us */}
-      <section className="relative mt-24 h-[70svh] min-h-[420px] overflow-hidden sm:mt-32">
-        <Parallax>
-          <Image src={IMAGES.glassTowers} alt="One Horizon Centre" fill sizes="100vw" className="object-cover" />
-        </Parallax>
-        <div className="shell relative flex h-full items-end pb-10">
-          <Reveal className="rounded-2xl bg-ivory/95 p-8 backdrop-blur-sm">
-            <p className="text-[11px] tracking-[0.3em] text-gold-deep uppercase">Find us</p>
-            <p className="mt-2 font-serif text-3xl font-semibold">{CONTACT.address}</p>
-          </Reveal>
-        </div>
-      </section>
+      
+        {/* Where to find us */}
+        <section className="relative overflow-hidden bg-ivory py-16 sm:py-5">
+          <div className="shell">
+            
 
-      <div className="py-24 sm:py-32">
-        <ImageMarquee />
-      </div>
+            <div className="relative h-[420px] overflow-hidden rounded-2xl border border-line sm:h-[520px]">
+              <iframe
+                title="Lexora Law Firm office location"
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(CONTACT.address)}&output=embed`}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+                className="absolute inset-0"
+              />
+            </div>
+
+           
+          </div>
+        </section>
+
+
+     
     </>
   );
 }
