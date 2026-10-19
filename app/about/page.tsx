@@ -7,6 +7,8 @@ import SectionHeading from "../components/sections/SectionHeading";
 import Counter from "../components/motion/Counter";
 import Reveal from "../components/motion/Reveal";
 import { IMAGES, MILESTONES, STATS, VALUES } from "../lib/data";
+import Link from "next/link";
+import { ArrowRight } from "../components/ui/Icons";
 
 export const metadata: Metadata = { title: "About" };
 
@@ -16,28 +18,63 @@ export default function AboutPage() {
       <PageHero eyebrow="About us" title="Built on trust." line="Three decades of counsel, one promise." image={IMAGES.boardroom} />
 
       {/* Story — overlapping photos */}
-      <section className="shell grid items-center gap-16 py-[clamp(72px,9vw,128px)] lg:grid-cols-2">
-        <div className="relative pb-[clamp(40px,4.5vw,56px)]">
-          <Reveal variant="clip" className="aspect-[4/5] w-[80%] overflow-hidden rounded-2xl">
-            <Image src={IMAGES.libraryLadder} alt="Our library" fill sizes="(max-width: 1024px) 80vw, 40vw" className="object-cover" />
-          </Reveal>
-          <Reveal
-            variant="clip"
-            delay={250}
-            className="absolute right-0 bottom-0 aspect-square w-[48%] overflow-hidden rounded-2xl border-8 border-ivory"
-          >
-            <Image src={IMAGES.suitCuff} alt="Partner preparing for court" fill sizes="(max-width: 1024px) 48vw, 24vw" className="object-cover" />
-          </Reveal>
-        </div>
-        <div>
-          <SectionHeading eyebrow="Our story" title="Since" accent="1998." />
-          <Reveal delay={150}>
-            <p className="mt-6 max-w-md text-lg text-muted">
-              Founded by two litigators in Delhi. Today, forty attorneys across three cities.
-            </p>
-          </Reveal>
-        </div>
-      </section>
+    
+        <section className="shell grid items-center gap-16 py-[clamp(72px,9vw,128px)] lg:grid-cols-2">
+          <div className="relative pb-[clamp(40px,4.5vw,56px)]">
+            <Reveal
+              variant="clip"
+              className="aspect-[4/5] w-[80%] overflow-hidden rounded-2xl"
+            >
+              <Image
+                src={IMAGES.libraryLadder}
+                alt="Lexora law library"
+                fill
+                sizes="(max-width: 1024px) 80vw, 40vw"
+                className="object-cover"
+              />
+            </Reveal>
+
+            <Reveal
+              variant="clip"
+              delay={250}
+              className="absolute right-0 bottom-0 aspect-square w-[48%] overflow-hidden rounded-2xl border-8 border-ivory"
+            >
+              <Image
+                src={IMAGES.suitCuff}
+                alt="Legal professional preparing for court"
+                fill
+                sizes="(max-width: 1024px) 48vw, 24vw"
+                className="object-cover"
+              />
+            </Reveal>
+          </div>
+
+          <div>
+            <SectionHeading
+              eyebrow="Our Story"
+              title="Built on"
+              accent="Trust."
+            />
+
+            <Reveal delay={150}>
+              <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
+                Since 1998, we have helped individuals and businesses navigate
+                complex legal challenges with clarity, integrity and purpose.
+                Our approach combines thoughtful strategy with personal attention,
+                keeping your interests at the heart of every decision.
+              </p>
+
+              <Link
+                href="/about"
+                className="group mt-7 inline-flex items-center gap-3 border-b border-ink pb-2 text-sm font-medium transition-colors hover:border-gold hover:text-gold-deep"
+              >
+                Discover Our Story
+                <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+            </Reveal>
+          </div>
+        </section>
+
 
       {/* Values — word over photo */}
       <section className="shell">
@@ -96,9 +133,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <div className="py-[clamp(72px,9vw,128px)]">
-        <ImageMarquee />
-      </div>
+     
 
       <CtaBanner image={IMAGES.meetingRoom} />
     </>

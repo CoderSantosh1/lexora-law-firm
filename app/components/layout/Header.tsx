@@ -62,7 +62,7 @@ export default function Header() {
         <div className="shell flex h-[76px] items-center justify-between gap-6">
           <Logo />
 
-          <nav aria-label="Main" className="hidden items-center gap-8 lg:flex">
+          <nav aria-label="Main" className="hidden items-center gap-7 xl:flex">
             {NAV.map((item) =>
               item.mega ? (
                 <div
@@ -129,7 +129,7 @@ export default function Header() {
 
           <div className="flex items-center gap-3">
             <Link
-              href="/contact"
+              href="/book-consultation"
               className="group hidden items-center gap-2.5 rounded-full bg-ink px-5 py-3 text-[13px] font-medium text-ivory transition-all duration-500 hover:-translate-y-0.5 hover:bg-gold-deep hover:shadow-[0_12px_30px_-12px_rgba(134,97,44,0.7)] sm:inline-flex"
             >
               Book Consultation
@@ -140,7 +140,7 @@ export default function Header() {
               onClick={() => setMenu((v) => !v)}
               aria-label={menu ? "Close menu" : "Open menu"}
               aria-expanded={menu}
-              className="relative flex size-11 flex-col items-center justify-center gap-1 rounded-full border border-ink/20 transition-colors hover:border-gold lg:hidden"
+              className="relative flex size-11 flex-col items-center justify-center gap-1 rounded-full border border-ink/20 transition-colors hover:border-gold xl:hidden"
             >
               {[0, 1, 2].map((i) => (
                 <span
@@ -159,7 +159,7 @@ export default function Header() {
       {/* Full-screen mobile menu */}
       <div
         aria-hidden={!menu}
-        className={`fixed inset-0 z-40 flex flex-col bg-ivory px-(--pad) pt-[100px] pb-10 transition-[clip-path,visibility] duration-700 ease-lux lg:hidden ${
+        className={`fixed inset-0 z-40 flex flex-col overflow-y-auto bg-ivory px-(--pad) pt-[100px] pb-10 transition-[clip-path,visibility] duration-700 ease-lux xl:hidden ${
           menu ? "visible [clip-path:circle(150%_at_calc(100%_-_44px)_38px)]" : "invisible [clip-path:circle(0%_at_calc(100%_-_44px)_38px)]"
         }`}
       >
@@ -170,7 +170,7 @@ export default function Header() {
               href={item.href}
               tabIndex={menu ? 0 : -1}
               style={{ transitionDelay: menu ? `${150 + i * 60}ms` : "0ms" }}
-              className={`flex items-baseline gap-4 font-serif text-[clamp(34px,9vw,56px)] leading-[1.15] transition-[opacity,translate,color] duration-600 ease-lux ${
+              className={`flex items-baseline gap-4 font-serif text-[clamp(30px,7.5vw,48px)] leading-[1.15] transition-[opacity,translate,color] duration-600 ease-lux ${
                 menu ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
               } ${isActive(item.href) ? "text-gold-deep" : "text-ink"}`}
             >
@@ -179,8 +179,15 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+        <Link
+          href="/book-consultation"
+          tabIndex={menu ? 0 : -1}
+          className={`mt-8 inline-flex w-fit items-center gap-3 rounded-full bg-ink px-6 py-3.5 text-sm font-medium text-ivory transition-opacity delay-500 duration-700 ${menu ? "opacity-100" : "opacity-0"}`}
+        >
+          Book Consultation <ArrowRight className="size-4" />
+        </Link>
         <div
-          className={`mt-auto grid grid-cols-3 gap-2 transition-opacity delay-500 duration-700 ${menu ? "opacity-100" : "opacity-0"}`}
+          className={`mt-auto grid grid-cols-3 pt-8 gap-2 transition-opacity delay-500 duration-700 ${menu ? "opacity-100" : "opacity-0"}`}
         >
           {[IMAGES.boardroom, IMAGES.justiceLight, IMAGES.handshake].map((src) => (
             <div key={src} className="relative aspect-square overflow-hidden rounded-lg">

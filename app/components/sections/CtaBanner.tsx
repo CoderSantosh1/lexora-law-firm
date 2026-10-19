@@ -20,7 +20,7 @@ export default function CtaBanner({ image = IMAGES.courthouse }: { image?: strin
             Your case deserves <em className="font-medium text-gold">excellence.</em>
           </h2>
           <Link
-            href="/contact"
+            href="/book-consultation"
             className="group mt-8 inline-flex items-center gap-3 rounded-full bg-ink px-7 py-4 text-sm font-medium text-ivory transition-all duration-500 hover:-translate-y-0.5 hover:bg-gold-deep"
           >
             Book Consultation

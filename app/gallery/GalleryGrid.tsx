@@ -71,9 +71,9 @@ export default function GalleryGrid() {
                 className="object-cover transition-transform duration-[1200ms] ease-lux group-hover:scale-110"
               />
             </div>
-            <span className="absolute inset-x-3 bottom-3 translate-y-3 rounded-lg bg-ivory/95 px-4 py-2 text-left text-sm opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+            {/* <span className="absolute inset-x-3 bottom-3 translate-y-3 rounded-lg bg-ivory/95 px-4 py-2 text-left text-sm opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
               {g.alt}
-            </span>
+            </span> */}
           </button>
         ))}
       </div>

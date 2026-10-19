@@ -7,15 +7,20 @@ export default function PageHero({
   title,
   line,
   image,
+  compact = false,
 }: {
   eyebrow: string;
   title: string;
   line?: string;
   image: string;
+  /** Shorter photo for detail pages */
+  compact?: boolean;
 }) {
   return (
     <section className="shell pt-24">
-      <div className="relative h-[min(78svh,760px)] min-h-[460px] overflow-hidden rounded-2xl">
+      <div
+        className={`relative overflow-hidden rounded-2xl ${compact ? "h-[min(52svh,520px)] min-h-[380px]" : "h-[min(78svh,760px)] min-h-[460px]"}`}
+      >
         <div className="absolute inset-0 animate-zoom-out">
           <Parallax speed={0.12}>
             <Image src={image} alt="" fill preload sizes="100vw" className="object-cover" />

@@ -41,7 +41,7 @@ export default function PracticeAreasPage() {
               <h2 className="mt-5 font-serif text-[clamp(38px,4.5vw,60px)] leading-[1] font-semibold">{p.title}</h2>
               <p className="mt-4 text-lg text-muted">{p.line}</p>
               <ul className="mt-6 flex flex-wrap gap-2">
-                {p.services.slice(0, 4).map((s) => (
+                {p.services.slice(0, 4).map(({ name: s }) => (
                   <li key={s} className="rounded-full border border-line bg-white px-4 py-1.5 text-xs text-ink-soft">
                     {s}
                   </li>

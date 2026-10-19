@@ -80,6 +80,18 @@ export const Clock = ({ className }: P) => (
   </svg>
 );
 
+export const Star = ({ className }: P) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+    <path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z" />
+  </svg>
+);
+
+export const Quote = ({ className }: P) => (
+  <svg viewBox="0 0 48 48" fill="currentColor" className={className} aria-hidden="true">
+    <path d="M10 36c-3 0-6-3-6-8 0-9 6-16 14-18l1 3c-5 2-8 6-8 10 3 0 6 3 6 6.5S14 36 10 36zm22 0c-3 0-6-3-6-8 0-9 6-16 14-18l1 3c-5 2-8 6-8 10 3 0 6 3 6 6.5S36 36 32 36z" />
+  </svg>
+);
+
 export const Pillar = ({ className }: P) => (
   <svg viewBox="0 0 40 40" fill="currentColor" className={className} aria-hidden="true">
     <path d="M4 7h32v3H4zM6 4h28l2 3H4zM7 11h26v2H7z" />
