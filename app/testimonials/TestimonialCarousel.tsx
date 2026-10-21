@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Quote } from "../components/ui/Icons";
 import Stars from "../components/ui/Stars";
-import { TESTIMONIALS } from "../lib/data";
+import category from "@/data/category.json";
+const { TESTIMONIALS } = category;
 
 type Testimonial = (typeof TESTIMONIALS)[number];
 

@@ -7,15 +7,7 @@ const nextConfig: NextConfig = {
   },
   cacheComponents: true,
   partialPrefetching: true,
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-        pathname: "/**",
-      },
-    ],
-  },
+  // All images are local files in public/images, so no remote image hosts are allowed.
   turbopack: {
     rules: {
       "*.css": {

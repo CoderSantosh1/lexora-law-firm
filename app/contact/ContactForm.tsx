@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { ArrowRight } from "../components/ui/Icons";
-import { PRACTICE } from "../lib/data";
+import category from "@/data/category.json";
+const { PRACTICE } = category;
 
 const field =
   "peer w-full border-b border-line bg-transparent pt-6 pb-2 text-[15px] text-ink outline-none transition-colors placeholder:text-transparent focus:border-gold";

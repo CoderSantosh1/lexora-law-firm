@@ -1,0 +1,1122 @@
+{
+  "CONTACT": {
+    "phone": "+1 0000 0000",
+    "email": "info@xyz.com",
+    "address": "1234 Main Street, Suite 100, Springfield, IL 62701, USA",
+    "hours": "Mon – Sat · 9:00 – 19:00"
+  },
+  "FAQS": [
+    {
+      "topic": "General",
+      "q": "Which areas of law do you handle?",
+      "a": "Business and corporate, litigation and disputes, personal and family, property and real estate, and general legal advisory."
+    },
+    {
+      "topic": "General",
+      "q": "Where are your offices?",
+      "a": "Our main office is in Gurugram, and we serve clients across the NCR and the rest of India, in person or online."
+    },
+    {
+      "topic": "General",
+      "q": "Will my information be kept confidential?",
+      "a": "Always. Everything you share with us is protected by attorney–client privilege from the very first conversation."
+    },
+    {
+      "topic": "Fees",
+      "q": "How do you charge?",
+      "a": "Depending on the matter, we work on a fixed fee, an hourly rate or a monthly retainer. You will get the fee in writing before any work starts."
+    },
+    {
+      "topic": "Fees",
+      "q": "Is the first consultation free?",
+      "a": "The first 30-minute consultation is complimentary, so you can understand your options before committing."
+    },
+    {
+      "topic": "Fees",
+      "q": "Are there any hidden costs?",
+      "a": "No. Court fees and other external costs are listed separately in your estimate, and we tell you before anything changes."
+    },
+    {
+      "topic": "Process",
+      "q": "Who will handle my matter?",
+      "a": "Every matter is led by one partner, supported by an associate. You always know who is responsible."
+    },
+    {
+      "topic": "Process",
+      "q": "How will you keep me updated?",
+      "a": "You get an update after every hearing or major step, plus a direct line to your lawyer for questions in between."
+    },
+    {
+      "topic": "Process",
+      "q": "How long will my case take?",
+      "a": "It depends on the type of matter and the forum. We give you a realistic timeline in the first meeting and update it as things move."
+    },
+    {
+      "topic": "Consultation",
+      "q": "How do I book a consultation?",
+      "a": "Use the Book Consultation page to pick a date, time and format. We confirm within one working day."
+    },
+    {
+      "topic": "Consultation",
+      "q": "What should I bring?",
+      "a": "Any notices, contracts, letters or documents related to your matter. A short timeline of events also helps."
+    },
+    {
+      "topic": "Consultation",
+      "q": "Can I consult over video?",
+      "a": "Yes. You can choose an in-person, video or phone consultation when you book."
+    }
+  ],
+  "GALLERY": [
+    {
+      "image": "/images/about/boardroom.jpg",
+      "alt": "Lexora boardroom",
+      "tag": "Office"
+    },
+    {
+      "image": "/images/home/lady-justice.jpg",
+      "alt": "Lady Justice statue",
+      "tag": "Courtroom",
+      "tall": true
+    },
+    {
+      "image": "/images/home/client-meeting.jpg",
+      "alt": "Client meeting",
+      "tag": "Moments"
+    },
+    {
+      "image": "/images/hero/law-library.jpg",
+      "alt": "Law library",
+      "tag": "Office",
+      "tall": true
+    },
+    {
+      "image": "/images/testimonials/handshake.jpg",
+      "alt": "Agreement handshake",
+      "tag": "Moments"
+    },
+    {
+      "image": "/images/common/courthouse.jpg",
+      "alt": "Courthouse facade",
+      "tag": "Courtroom"
+    },
+    {
+      "image": "/images/contact/office-window.jpg",
+      "alt": "Workspace by the window",
+      "tag": "Office"
+    },
+    {
+      "image": "/images/about/partner-suit.jpg",
+      "alt": "Partner preparing for court",
+      "tag": "Moments",
+      "tall": true
+    },
+    {
+      "image": "/images/practice-areas/litigation-gavel.jpg",
+      "alt": "Judge's gavel",
+      "tag": "Courtroom"
+    },
+    {
+      "image": "/images/about/meeting-rooms.jpg",
+      "alt": "Glass meeting rooms",
+      "tag": "Office"
+    },
+    {
+      "image": "/images/common/contract-signing.jpg",
+      "alt": "Signing a contract",
+      "tag": "Moments"
+    },
+    {
+      "image": "/images/home/courthouse-columns.jpg",
+      "alt": "Classical columns",
+      "tag": "Courtroom",
+      "tall": true
+    },
+    {
+      "image": "/images/gallery/office-loft.jpg",
+      "alt": "Open office",
+      "tag": "Office"
+    },
+    {
+      "image": "/images/common/strategy-session.jpg",
+      "alt": "Strategy session",
+      "tag": "Moments"
+    }
+  ],
+  "IMAGES": {
+    "justiceLight": "/images/home/lady-justice.jpg",
+    "justiceBronze": "/images/hero/lady-justice-bronze.jpg",
+    "gavelDark": "/images/practice-areas/litigation-gavel.jpg",
+    "gavelLight": "/images/about/gavel.jpg",
+    "library": "/images/practice-areas/library.jpg",
+    "libraryLadder": "/images/hero/law-library.jpg",
+    "columns": "/images/home/courthouse-columns.jpg",
+    "courthouse": "/images/common/courthouse.jpg",
+    "boardroom": "/images/about/boardroom.jpg",
+    "meetingRoom": "/images/about/meeting-rooms.jpg",
+    "officeLoft": "/images/gallery/office-loft.jpg",
+    "officeWindow": "/images/contact/office-window.jpg",
+    "officeBright": "/images/practice-areas/office-bright.jpg",
+    "signing": "/images/common/contract-signing.jpg",
+    "signing2": "/images/practice-areas/advisory-signing.jpg",
+    "documents": "/images/insights/documents.jpg",
+    "handshake": "/images/testimonials/handshake.jpg",
+    "meetingTable": "/images/home/client-meeting.jpg",
+    "meetingWomen": "/images/common/strategy-session.jpg",
+    "meetingTeam": "/images/team/team-meeting.jpg",
+    "suitCuff": "/images/about/partner-suit.jpg",
+    "suitAdjust": "/images/team/partner-suit.jpg",
+    "laptopDesk": "/images/insights/laptop-desk.jpg",
+    "skyscrapers": "/images/practice-areas/business-skyscrapers.jpg",
+    "glassTower": "/images/practice-areas/glass-tower.jpg",
+    "glassTowers": "/images/about/glass-towers.jpg",
+    "family": "/images/practice-areas/family.jpg",
+    "houseModern": "/images/practice-areas/property-house.jpg",
+    "housePool": "/images/practice-areas/property-pool.jpg",
+    "houseGarden": "/images/practice-areas/property-garden.jpg"
+  },
+  "INSIGHTS": [
+    {
+      "slug": "new-arbitration-rules",
+      "title": "What the new arbitration rules mean for you",
+      "tag": "Litigation",
+      "date": "Oct 2026",
+      "image": "/images/home/client-meeting.jpg",
+      "author": "Elena Russo",
+      "readTime": "5 min read",
+      "excerpt": "Faster timelines, tighter costs and new powers for tribunals — here is what changes for businesses in a dispute.",
+      "takeaways": [
+        "Most arbitrations must now finish within 12 months of the tribunal being formed.",
+        "Emergency relief is available before the full tribunal is appointed.",
+        "Review the arbitration clause in your key contracts this quarter."
+      ],
+      "body": [
+        {
+          "p": "Arbitration was meant to be the faster, cheaper alternative to court. Over the years it often became neither. The latest rules try to bring it back on track — and they affect almost every commercial contract you have signed."
+        },
+        {
+          "h": "Strict timelines"
+        },
+        {
+          "p": "Tribunals are now expected to deliver an award within twelve months of being formed, with a six-month extension only by consent. Delays without reason can affect the arbitrators' fees, which gives everyone a strong incentive to keep things moving."
+        },
+        {
+          "h": "Emergency relief"
+        },
+        {
+          "p": "If you need urgent protection — to stop an asset being sold, for example — you can now ask an emergency arbitrator before the main tribunal is even in place. That closes a gap that previously pushed parties back to court."
+        },
+        {
+          "quote": "A well-drafted clause today saves months of argument tomorrow."
+        },
+        {
+          "h": "What you should do now"
+        },
+        {
+          "p": "Look at the dispute clauses in your major supply, distribution and partnership agreements. Check the seat, the institution and the number of arbitrators. Small fixes now can make a big difference if a dispute ever arises."
+        }
+      ]
+    },
+    {
+      "slug": "five-clauses-founders",
+      "title": "Five clauses every founder should read twice",
+      "tag": "Corporate",
+      "date": "Sep 2026",
+      "image": "/images/common/contract-signing.jpg",
+      "author": "Daniel Whitmore",
+      "readTime": "6 min read",
+      "excerpt": "Term sheets move fast. These five clauses decide who really controls your company — read them slowly.",
+      "takeaways": [
+        "Liquidation preferences decide who gets paid first on an exit.",
+        "Vesting protects the company if a co-founder leaves early.",
+        "Never sign a term sheet without understanding the veto rights."
+      ],
+      "body": [
+        {
+          "p": "Fundraising is exciting, and term sheets are usually short. But a few lines in that document will shape your company for years. Here are the five we ask every founder to read twice."
+        },
+        {
+          "h": "1. Liquidation preference"
+        },
+        {
+          "p": "This decides how money is shared when the company is sold. A simple 1x non-participating preference is standard; anything more aggressive deserves a careful conversation."
+        },
+        {
+          "h": "2. Founder vesting"
+        },
+        {
+          "p": "Investors often ask founders to re-vest their shares. It feels uncomfortable, but it also protects you if a co-founder walks away in year one."
+        },
+        {
+          "h": "3. Veto rights"
+        },
+        {
+          "p": "Protective provisions let investors block certain decisions. Make sure the list is limited to genuinely major events, not day-to-day operations."
+        },
+        {
+          "quote": "The shortest clauses often carry the longest consequences."
+        },
+        {
+          "h": "4 & 5. Anti-dilution and ESOP size"
+        },
+        {
+          "p": "Broad-based weighted-average anti-dilution is founder-friendly; full ratchet is not. And check whether the option pool is created before or after the investment — it changes your real valuation."
+        }
+      ]
+    },
+    {
+      "slug": "property-documents-checklist",
+      "title": "Buying property? Check these documents first",
+      "tag": "Real Estate",
+      "date": "Sep 2026",
+      "image": "/images/practice-areas/property-pool.jpg",
+      "author": "Rohan Malhotra",
+      "readTime": "4 min read",
+      "excerpt": "A beautiful home can hide an ugly title. These documents tell you whether the seller can really sell.",
+      "takeaways": [
+        "Ask for 30 years of title documents, not just the latest sale deed.",
+        "Check the encumbrance certificate for loans and mortgages.",
+        "For new projects, confirm RERA registration and approvals."
+      ],
+      "body": [
+        {
+          "p": "Most property disputes we see could have been avoided with a few days of document checks before signing. Here is the short list we review for every client."
+        },
+        {
+          "h": "Title chain"
+        },
+        {
+          "p": "The seller's sale deed is only the last link. We trace ownership back thirty years to make sure every transfer was valid and registered."
+        },
+        {
+          "h": "Encumbrance certificate"
+        },
+        {
+          "p": "This shows whether the property is mortgaged or tied up in any registered claim. A clean certificate is essential before you pay a deposit."
+        },
+        {
+          "quote": "If a document is missing, the time to ask is before you pay — not after."
+        },
+        {
+          "h": "Approvals and RERA"
+        },
+        {
+          "p": "For apartments and new projects, check the sanctioned plan, the occupancy certificate and RERA registration. They protect you if the builder delays possession."
+        }
+      ]
+    },
+    {
+      "slug": "custody-and-care-guide",
+      "title": "Custody and care: a calm guide",
+      "tag": "Family",
+      "date": "Aug 2026",
+      "image": "/images/practice-areas/family.jpg",
+      "author": "Priya Kapoor",
+      "readTime": "5 min read",
+      "excerpt": "When parents separate, children need stability most. How custody decisions are made — and how to keep them calm.",
+      "takeaways": [
+        "Courts decide custody based on the child's welfare above all else.",
+        "Shared parenting plans are increasingly common.",
+        "Mediation usually reaches a workable plan faster than litigation."
+      ],
+      "body": [
+        {
+          "p": "Separation is hard on everyone, and hardest on children. The law's starting point is simple: what is best for the child. Everything else follows from that."
+        },
+        {
+          "h": "How courts look at custody"
+        },
+        {
+          "p": "Judges consider the child's age, their routine, schooling, health and, for older children, their own wishes. Neither parent starts with an automatic advantage."
+        },
+        {
+          "h": "Shared parenting"
+        },
+        {
+          "p": "Many families now agree on shared arrangements — weekdays with one parent, weekends or holidays with the other — so the child keeps a strong bond with both."
+        },
+        {
+          "quote": "The best custody plan is the one both parents can actually live with."
+        },
+        {
+          "h": "Why mediation helps"
+        },
+        {
+          "p": "A mediated agreement is private, quicker and usually lasts longer, because both parents helped write it. We recommend trying it first wherever it is safe to do so."
+        }
+      ]
+    },
+    {
+      "slug": "compliance-calendars",
+      "title": "Compliance calendars that actually work",
+      "tag": "Advisory",
+      "date": "Aug 2026",
+      "image": "/images/insights/laptop-desk.jpg",
+      "author": "Ananya Rao",
+      "readTime": "4 min read",
+      "excerpt": "Missed filings cost money and credibility. A simple calendar — owned by one person — fixes most of it.",
+      "takeaways": [
+        "List every filing once, with its owner and deadline.",
+        "Set reminders 30 and 7 days before each due date.",
+        "Review the calendar every quarter as rules change."
+      ],
+      "body": [
+        {
+          "p": "Most compliance failures are not about bad intentions. They are about a deadline nobody owned. A good calendar solves that with very little effort."
+        },
+        {
+          "h": "Start with one master list"
+        },
+        {
+          "p": "Write down every recurring obligation: tax filings, ROC returns, licence renewals, board meetings and policy reviews. One list, one place."
+        },
+        {
+          "h": "Give every line an owner"
+        },
+        {
+          "p": "A task with two owners has none. Name one person for each filing and a backup for holidays."
+        },
+        {
+          "quote": "Compliance is a habit, not an emergency."
+        },
+        {
+          "h": "Review it every quarter"
+        },
+        {
+          "p": "Rules change. A short quarterly review — fifteen minutes with your advisor — keeps the calendar accurate and your company out of trouble."
+        }
+      ]
+    },
+    {
+      "slug": "inside-a-winning-appeal",
+      "title": "Inside a winning appeal",
+      "tag": "Litigation",
+      "date": "Jul 2026",
+      "image": "/images/common/courthouse.jpg",
+      "author": "Sophia Laurent",
+      "readTime": "6 min read",
+      "excerpt": "Appeals are not a second trial. Winning one means finding the precise point where the first decision went wrong.",
+      "takeaways": [
+        "An appeal reviews legal errors, not the whole case again.",
+        "Strict time limits apply — act quickly after a judgment.",
+        "Clear, focused written arguments matter most."
+      ],
+      "body": [
+        {
+          "p": "Clients often see an appeal as a chance to tell their story again. In reality, an appellate court asks a narrower question: did the lower court make a mistake that changed the outcome?"
+        },
+        {
+          "h": "Finding the error"
+        },
+        {
+          "p": "We read the judgment line by line, alongside the evidence, looking for a misapplied law, an ignored document or a finding with no basis in the record."
+        },
+        {
+          "h": "Telling a focused story"
+        },
+        {
+          "p": "Strong appeals argue two or three points well rather than ten points weakly. Judges respond to clarity."
+        },
+        {
+          "quote": "In an appeal, less argument often wins more."
+        },
+        {
+          "h": "Timing is everything"
+        },
+        {
+          "p": "Limitation periods for appeals are short. If you have received an unfavourable judgment, speak to a lawyer within days, not weeks."
+        }
+      ]
+    },
+    {
+      "slug": "due-diligence-the-lexora-way",
+      "title": "Due diligence, the Lexora way",
+      "tag": "Advisory",
+      "date": "Jun 2026",
+      "image": "/images/insights/documents.jpg",
+      "author": "Vikram Sethi",
+      "readTime": "5 min read",
+      "excerpt": "Due diligence is not a box to tick. Done well, it changes the price, the terms — and sometimes the decision.",
+      "takeaways": [
+        "Agree the scope before you start, so effort goes where risk is.",
+        "Red-flag reports are more useful than long summaries.",
+        "Findings should feed directly into the contract."
+      ],
+      "body": [
+        {
+          "p": "Whether you are buying a company, investing in one or taking on a major partner, due diligence tells you what you are really getting. Here is how we approach it."
+        },
+        {
+          "h": "Scope first"
+        },
+        {
+          "p": "We agree with you upfront which risks matter most for this deal — litigation, tax, property, employees or regulatory — and focus there."
+        },
+        {
+          "h": "Red flags, not encyclopedias"
+        },
+        {
+          "p": "You get a short report that ranks issues by impact, with a clear recommendation for each. Long appendices are available, but the decisions sit on the first page."
+        },
+        {
+          "quote": "Good diligence doesn't just find problems — it prices them."
+        },
+        {
+          "h": "From findings to contract"
+        },
+        {
+          "p": "Every serious finding becomes a warranty, an indemnity, a price adjustment or a condition before closing. That is where diligence earns its fee."
+        }
+      ]
+    }
+  ],
+  "MILESTONES": [
+    {
+      "year": "1998",
+      "text": "Founded in Delhi",
+      "image": "/images/hero/law-library.jpg"
+    },
+    {
+      "year": "2008",
+      "text": "Corporate wing opens",
+      "image": "/images/practice-areas/business-skyscrapers.jpg"
+    },
+    {
+      "year": "2016",
+      "text": "1,000th case won",
+      "image": "/images/about/gavel.jpg"
+    },
+    {
+      "year": "2026",
+      "text": "Three cities, one firm",
+      "image": "/images/about/glass-towers.jpg"
+    }
+  ],
+  "NAV": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Practice Areas",
+      "href": "/practice-areas",
+      "mega": true
+    },
+    {
+      "label": "Team",
+      "href": "/team"
+    },
+    {
+      "label": "Testimonials",
+      "href": "/testimonials"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery"
+    },
+    {
+      "label": "Insights",
+      "href": "/insights"
+    },
+    {
+      "label": "FAQ",
+      "href": "/faq"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "PRACTICE": [
+    {
+      "slug": "business-corporate",
+      "icon": "briefcase",
+      "title": "Business & Corporate",
+      "line": "Deals, governance and growth — structured to last.",
+      "details": [
+        "From first funding round to full acquisition, we structure deals that protect what you have built.",
+        "Our corporate team works with founders, family businesses and listed companies across India — drafting, negotiating and closing transactions of every size.",
+        "Beyond the deal, we stay on as your legal partner: board meetings, shareholder agreements, compliance calendars and employment policies, all handled by one team that already knows your business."
+      ],
+      "facts": [
+        {
+          "value": "350+",
+          "label": "Deals closed"
+        },
+        {
+          "value": "₹4,000 Cr",
+          "label": "Transaction value"
+        },
+        {
+          "value": "120+",
+          "label": "Retainer clients"
+        }
+      ],
+      "services": [
+        {
+          "name": "Mergers & Acquisitions",
+          "text": "Due diligence, valuation support and deal documents from term sheet to closing."
+        },
+        {
+          "name": "Contracts",
+          "text": "Vendor, client and partnership agreements written to prevent disputes, not invite them."
+        },
+        {
+          "name": "Compliance",
+          "text": "ROC filings, board resolutions and statutory registers kept current all year."
+        },
+        {
+          "name": "Startups",
+          "text": "Incorporation, ESOPs, founder agreements and investor rounds done right the first time."
+        },
+        {
+          "name": "Employment",
+          "text": "Offer letters, HR policies, POSH committees and exits handled with care."
+        },
+        {
+          "name": "Joint Ventures",
+          "text": "Clear structures for shared ownership, control and a clean exit if needed."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How early should we involve a lawyer in a deal?",
+          "a": "Before you sign a term sheet. The structure agreed at that stage decides most of what follows."
+        },
+        {
+          "q": "Do you work on a retainer?",
+          "a": "Yes. Most corporate clients choose a monthly retainer that covers contracts, compliance and advice."
+        },
+        {
+          "q": "Can you work with our in-house team?",
+          "a": "Absolutely. We regularly act as an extension of in-house legal teams on larger or specialist matters."
+        }
+      ],
+      "image": "/images/practice-areas/business-skyscrapers.jpg",
+      "gallery": [
+        "/images/about/boardroom.jpg",
+        "/images/common/contract-signing.jpg",
+        "/images/practice-areas/glass-tower.jpg"
+      ]
+    },
+    {
+      "slug": "litigation-disputes",
+      "icon": "scales",
+      "title": "Litigation & Disputes",
+      "line": "Courtroom strength when it matters most.",
+      "details": [
+        "We prepare every case as if it will go to trial — and that is why most settle on our terms.",
+        "Our litigators appear before district courts, High Courts, tribunals and arbitral panels, in civil, commercial and criminal matters.",
+        "From the first notice to the final appeal, one partner stays with your matter, so you always know who is responsible and what happens next."
+      ],
+      "facts": [
+        {
+          "value": "1,200+",
+          "label": "Cases won"
+        },
+        {
+          "value": "18",
+          "label": "Courts & tribunals"
+        },
+        {
+          "value": "9 in 10",
+          "label": "Settled favourably"
+        }
+      ],
+      "services": [
+        {
+          "name": "Civil Litigation",
+          "text": "Recovery suits, contract disputes and injunctions argued with a clear strategy."
+        },
+        {
+          "name": "Arbitration",
+          "text": "Domestic and international arbitration, from notice to award enforcement."
+        },
+        {
+          "name": "Criminal Defence",
+          "text": "Bail, trials and white-collar matters handled discreetly and firmly."
+        },
+        {
+          "name": "Appeals",
+          "text": "Fresh eyes on lower-court rulings, with focused written and oral arguments."
+        },
+        {
+          "name": "Mediation",
+          "text": "Faster, private settlements when a courtroom battle is not the best route."
+        },
+        {
+          "name": "Injunctions",
+          "text": "Urgent relief to stop harm while the main dispute is heard."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How long will my case take?",
+          "a": "It depends on the forum, but we give you a realistic timeline in the first meeting and update it as things move."
+        },
+        {
+          "q": "Should I try to settle?",
+          "a": "Often, yes — but only from a position of strength. We prepare for trial so you can negotiate with confidence."
+        },
+        {
+          "q": "What do I need for the first meeting?",
+          "a": "Any notices, contracts and correspondence you have. We will tell you what else is needed."
+        }
+      ],
+      "image": "/images/practice-areas/litigation-gavel.jpg",
+      "gallery": [
+        "/images/common/courthouse.jpg",
+        "/images/home/lady-justice.jpg",
+        "/images/practice-areas/library.jpg"
+      ]
+    },
+    {
+      "slug": "personal-family",
+      "icon": "family",
+      "title": "Personal & Family",
+      "line": "Sensitive matters, handled with care.",
+      "details": [
+        "Family matters need patience as much as law. We listen first, then build a clear plan.",
+        "Divorce, custody, maintenance and inheritance are handled privately, with your family's future — and your children's wellbeing — in mind.",
+        "Where possible we resolve matters through mediation and agreement; where it is not, we represent you firmly in court."
+      ],
+      "facts": [
+        {
+          "value": "600+",
+          "label": "Families helped"
+        },
+        {
+          "value": "70%",
+          "label": "Resolved by mediation"
+        },
+        {
+          "value": "100%",
+          "label": "Confidential"
+        }
+      ],
+      "services": [
+        {
+          "name": "Divorce",
+          "text": "Mutual-consent and contested divorces, handled with dignity and discretion."
+        },
+        {
+          "name": "Child Custody",
+          "text": "Custody and visitation plans that put the child's interests first."
+        },
+        {
+          "name": "Wills & Estates",
+          "text": "Wills, trusts and succession planning so your wishes are clear."
+        },
+        {
+          "name": "Adoption",
+          "text": "Guidance through every step of domestic and inter-country adoption."
+        },
+        {
+          "name": "Personal Injury",
+          "text": "Compensation claims for accidents and medical negligence."
+        },
+        {
+          "name": "Guardianship",
+          "text": "Legal guardianship for minors and dependent family members."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Will my matter stay private?",
+          "a": "Yes. Every family matter is handled with strict confidentiality, and we request in-camera hearings where possible."
+        },
+        {
+          "q": "Is mediation compulsory?",
+          "a": "Not always, but courts often encourage it. We will advise whether it suits your situation."
+        },
+        {
+          "q": "Do I need a will if I am young?",
+          "a": "If you own property or have dependants, a simple will saves your family a great deal of difficulty."
+        }
+      ],
+      "image": "/images/practice-areas/family.jpg",
+      "gallery": [
+        "/images/common/strategy-session.jpg",
+        "/images/insights/documents.jpg",
+        "/images/contact/office-window.jpg"
+      ]
+    },
+    {
+      "slug": "property-real-estate",
+      "icon": "home",
+      "title": "Property & Real Estate",
+      "line": "Every square foot, legally sound.",
+      "details": [
+        "Buying, leasing or developing — we check every title, approval and clause before you sign.",
+        "We act for home buyers, landlords, developers and investors on residential and commercial property across the NCR and beyond.",
+        "When disputes arise — over title, possession, rent or delayed projects — we move quickly to protect your property and your investment."
+      ],
+      "facts": [
+        {
+          "value": "2,500+",
+          "label": "Titles verified"
+        },
+        {
+          "value": "80+",
+          "label": "Projects advised"
+        },
+        {
+          "value": "48 hrs",
+          "label": "Title report"
+        }
+      ],
+      "services": [
+        {
+          "name": "Transactions",
+          "text": "Sale deeds, agreements and registration for homes and commercial space."
+        },
+        {
+          "name": "Leasing",
+          "text": "Lease and licence agreements that protect both owner and tenant."
+        },
+        {
+          "name": "Title Disputes",
+          "text": "Clearing defects and defending ownership in court."
+        },
+        {
+          "name": "Development",
+          "text": "Joint development agreements, approvals and project documentation."
+        },
+        {
+          "name": "Tenancy",
+          "text": "Eviction, rent recovery and tenancy disputes resolved efficiently."
+        },
+        {
+          "name": "RERA Matters",
+          "text": "Complaints and defence before RERA for delayed or defective projects."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is title verification?",
+          "a": "A search of ownership records going back 30 years to confirm the seller can legally sell the property."
+        },
+        {
+          "q": "Can you help with a delayed flat?",
+          "a": "Yes. We file and argue RERA and consumer complaints for refunds, interest or possession."
+        },
+        {
+          "q": "Do I need a lawyer to register property?",
+          "a": "It is not mandatory, but a lawyer-checked deed avoids costly mistakes that are hard to fix later."
+        }
+      ],
+      "image": "/images/practice-areas/property-house.jpg",
+      "gallery": [
+        "/images/practice-areas/property-pool.jpg",
+        "/images/practice-areas/property-garden.jpg",
+        "/images/practice-areas/advisory-signing.jpg"
+      ]
+    },
+    {
+      "slug": "legal-advisory",
+      "icon": "doc",
+      "title": "Legal Advisory",
+      "line": "Clear answers before problems begin.",
+      "details": [
+        "Good advice early costs far less than a dispute later. We review risks before they become cases.",
+        "Businesses and individuals come to us for second opinions, regulatory guidance and careful review of documents before they commit.",
+        "Retainer clients get a dedicated advisor for documents, policies and regulatory questions — a quick call away whenever something new comes up."
+      ],
+      "facts": [
+        {
+          "value": "24 hrs",
+          "label": "Typical reply"
+        },
+        {
+          "value": "5,000+",
+          "label": "Documents reviewed"
+        },
+        {
+          "value": "1",
+          "label": "Dedicated advisor"
+        }
+      ],
+      "services": [
+        {
+          "name": "Due Diligence",
+          "text": "Legal checks on companies, properties and partners before you commit."
+        },
+        {
+          "name": "Risk Review",
+          "text": "A clear map of legal risks in your business, with practical fixes."
+        },
+        {
+          "name": "Documentation",
+          "text": "Agreements, notices and policies drafted in plain, enforceable language."
+        },
+        {
+          "name": "Regulatory",
+          "text": "Guidance on licences, data protection and sector-specific rules."
+        },
+        {
+          "name": "Retainers",
+          "text": "Ongoing legal support for a fixed monthly fee."
+        },
+        {
+          "name": "Policy Drafting",
+          "text": "Internal policies for HR, privacy, procurement and governance."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What does a retainer include?",
+          "a": "Unlimited advice calls, document reviews and drafting within an agreed scope, for a fixed monthly fee."
+        },
+        {
+          "q": "Can I get a one-time opinion?",
+          "a": "Yes. We provide written legal opinions on specific questions, usually within a few working days."
+        },
+        {
+          "q": "Do you advise individuals too?",
+          "a": "Yes — on contracts, investments, notices and any legal question before it turns into a dispute."
+        }
+      ],
+      "image": "/images/practice-areas/advisory-signing.jpg",
+      "gallery": [
+        "/images/insights/laptop-desk.jpg",
+        "/images/home/client-meeting.jpg",
+        "/images/practice-areas/office-bright.jpg"
+      ]
+    }
+  ],
+  "PROCESS": [
+    {
+      "title": "Consultation",
+      "text": "We listen, review your documents and explain where you stand."
+    },
+    {
+      "title": "Strategy",
+      "text": "A clear plan with options, timelines and costs — in writing."
+    },
+    {
+      "title": "Action",
+      "text": "Drafting, negotiation or court work, led by one partner."
+    },
+    {
+      "title": "Resolution",
+      "text": "We close the matter and stay available for what comes next."
+    }
+  ],
+  "STATS": [
+    {
+      "value": 25,
+      "suffix": "+",
+      "label": "Years"
+    },
+    {
+      "value": 1200,
+      "suffix": "+",
+      "label": "Cases Won"
+    },
+    {
+      "value": 98,
+      "suffix": "%",
+      "label": "Success Rate"
+    },
+    {
+      "value": 40,
+      "suffix": "",
+      "label": "Attorneys"
+    }
+  ],
+  "TEAM": [
+    {
+      "name": "Arjun Mehra",
+      "role": "Managing Partner",
+      "image": "/images/team/arjun-mehra.jpg"
+    },
+    {
+      "name": "Sophia Laurent",
+      "role": "Senior Litigator",
+      "image": "/images/team/sophia-laurent.jpg"
+    },
+    {
+      "name": "Daniel Whitmore",
+      "role": "Corporate Counsel",
+      "image": "/images/team/daniel-whitmore.jpg"
+    },
+    {
+      "name": "Priya Kapoor",
+      "role": "Family Law",
+      "image": "/images/team/priya-kapoor.jpg"
+    },
+    {
+      "name": "Rohan Malhotra",
+      "role": "Real Estate",
+      "image": "/images/team/rohan-malhotra.jpg"
+    },
+    {
+      "name": "Elena Russo",
+      "role": "Arbitration",
+      "image": "/images/team/elena-russo.jpg"
+    },
+    {
+      "name": "Vikram Sethi",
+      "role": "Senior Partner",
+      "image": "/images/team/vikram-sethi.jpg"
+    },
+    {
+      "name": "Ananya Rao",
+      "role": "Advisory",
+      "image": "/images/team/ananya-rao.jpg"
+    }
+  ],
+  "TESTIMONIALS": [
+    {
+      "quote": "They structured our acquisition in six weeks and caught two risks our bankers missed. Calm, sharp and always available.",
+      "name": "Karan Bhatia",
+      "role": "Founder, Northwind Foods",
+      "area": "Business & Corporate",
+      "image": "/images/testimonials/karan-bhatia.jpg"
+    },
+    {
+      "quote": "After two years in court elsewhere, Lexora settled our dispute in four months — on our terms.",
+      "name": "Meera Iyer",
+      "role": "Director, Iyer Textiles",
+      "area": "Litigation & Disputes",
+      "image": "/images/testimonials/meera-iyer.jpg"
+    },
+    {
+      "quote": "A painful time made bearable. They explained every step and kept my children's interests first.",
+      "name": "Neha Sharma",
+      "role": "Private client",
+      "area": "Personal & Family",
+      "image": "/images/testimonials/neha-sharma.jpg"
+    },
+    {
+      "quote": "Their title check stopped me from buying a flat with a hidden dispute. Worth every rupee.",
+      "name": "Rahul Verma",
+      "role": "Home buyer, Gurugram",
+      "area": "Property & Real Estate",
+      "image": "/images/testimonials/rahul-verma.jpg"
+    },
+    {
+      "quote": "Our monthly retainer feels like having a senior lawyer on the team. Quick, clear answers every time.",
+      "name": "Aisha Khan",
+      "role": "COO, Brightpath Health",
+      "area": "Legal Advisory",
+      "image": "/images/testimonials/aisha-khan.jpg"
+    },
+    {
+      "quote": "Professional from the first call. They told us honestly what to expect — and then delivered better.",
+      "name": "Sameer Joshi",
+      "role": "Partner, Joshi & Co.",
+      "area": "Litigation & Disputes",
+      "image": "/images/testimonials/sameer-joshi.jpg"
+    },
+    {
+      "quote": "Our shareholder agreement was a mess. They rewrote it in a week and every partner signed without a single objection.",
+      "name": "Vikram Desai",
+      "role": "MD, Desai Logistics",
+      "area": "Business & Corporate",
+      "image": "/images/testimonials/vikram-desai.jpg"
+    },
+    {
+      "quote": "They handled my divorce with such sensitivity. I never felt rushed, and the settlement was fair to both of us.",
+      "name": "Pooja Nair",
+      "role": "Private client",
+      "area": "Personal & Family",
+      "image": "/images/testimonials/pooja-nair.jpg"
+    },
+    {
+      "quote": "The builder delayed our flat by three years. Lexora won our RERA case with full interest.",
+      "name": "Aditya Rao",
+      "role": "Home buyer, Noida",
+      "area": "Property & Real Estate",
+      "image": "/images/testimonials/aditya-rao.jpg"
+    },
+    {
+      "quote": "From incorporation to our seed round, they were the calmest people in every meeting.",
+      "name": "Kabir Malhotra",
+      "role": "Co-founder, Loopwise",
+      "area": "Business & Corporate",
+      "image": "/images/testimonials/kabir-malhotra.jpg"
+    },
+    {
+      "quote": "Their data-protection review saved us from a regulatory fine before we launched.",
+      "name": "Riya Sen",
+      "role": "Head of Product, Finly",
+      "area": "Legal Advisory",
+      "image": "/images/testimonials/riya-sen.jpg"
+    },
+    {
+      "quote": "We leased our first office through them. Every clause explained, nothing left to chance.",
+      "name": "Anjali Gupta",
+      "role": "Owner, Studio Anjali",
+      "area": "Property & Real Estate",
+      "image": "/images/testimonials/anjali-gupta.jpg"
+    },
+    {
+      "quote": "They made my late father's estate simple for the whole family. Patient and kind throughout.",
+      "name": "Simran Kaur",
+      "role": "Private client",
+      "area": "Personal & Family",
+      "image": "/images/testimonials/simran-kaur.jpg"
+    },
+    {
+      "quote": "A recovery suit we thought was lost — they found the right argument and we recovered in full.",
+      "name": "Dev Patel",
+      "role": "Director, Patel Exports",
+      "area": "Litigation & Disputes",
+      "image": "/images/testimonials/dev-patel.jpg"
+    },
+    {
+      "quote": "Sharp in court and straight with us outside it. Exactly what you want in a litigator.",
+      "name": "Harish Menon",
+      "role": "CFO, Menon Steel",
+      "area": "Litigation & Disputes",
+      "image": "/images/testimonials/harish-menon.jpg"
+    },
+    {
+      "quote": "Every contract we send out now goes through their team first. It has paid for itself many times over.",
+      "name": "Farhan Ali",
+      "role": "Founder, Alif Retail",
+      "area": "Legal Advisory",
+      "image": "/images/testimonials/farhan-ali.jpg"
+    },
+    {
+      "quote": "They guided our family business through a tricky restructuring without a single dispute.",
+      "name": "Ishita Bose",
+      "role": "Director, Bose Group",
+      "area": "Business & Corporate",
+      "image": "/images/testimonials/ishita-bose.jpg"
+    },
+    {
+      "quote": "The title search found an old mortgage nobody had told us about. They sorted it before we paid a rupee.",
+      "name": "Tanya Arora",
+      "role": "Investor, Gurugram",
+      "area": "Property & Real Estate",
+      "image": "/images/testimonials/tanya-arora.jpg"
+    },
+    {
+      "quote": "Our custody arrangement was settled through mediation — no court battle, and the kids came first.",
+      "name": "Kavya Iyer",
+      "role": "Private client",
+      "area": "Personal & Family",
+      "image": "/images/testimonials/kavya-iyer.jpg"
+    }
+  ],
+  "VALUES": [
+    {
+      "word": "Integrity",
+      "image": "/images/home/lady-justice.jpg"
+    },
+    {
+      "word": "Clarity",
+      "image": "/images/contact/office-window.jpg"
+    },
+    {
+      "word": "Results",
+      "image": "/images/testimonials/handshake.jpg"
+    }
+  ]
+}

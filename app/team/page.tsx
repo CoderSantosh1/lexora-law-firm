@@ -5,7 +5,8 @@ import PageHero from "../components/sections/PageHero";
 import SectionHeading from "../components/sections/SectionHeading";
 import Parallax from "../components/motion/Parallax";
 import Reveal from "../components/motion/Reveal";
-import { IMAGES, TEAM } from "../lib/data";
+import category from "@/data/category.json";
+const { IMAGES, TEAM } = category;
 
 export const metadata: Metadata = { title: "Our Team" };
 
@@ -38,20 +39,7 @@ export default function TeamPage() {
         </div>
       </section>
 
-      {/* Full-bleed photo with card */}
-      <section className="relative h-[80svh] min-h-[480px] overflow-hidden">
-        <Parallax>
-          <Image src={IMAGES.meetingTable} alt="" fill sizes="100vw" className="object-cover" />
-        </Parallax>
-        <div className="shell relative flex h-full items-end pb-[clamp(40px,4.5vw,56px)]">
-          <Reveal className="max-w-md rounded-2xl bg-ivory/95 p-8 backdrop-blur-sm sm:p-10">
-            <p className="font-serif text-[clamp(30px,3.6vw,46px)] leading-[1.1]">
-              Every case gets <em className="text-gold">a partner</em>, not a file number.
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
+      
       <CtaBanner image={IMAGES.suitAdjust} />
     </>
   );

@@ -5,7 +5,8 @@ import { Clock, Mail, Phone, Pin } from "../components/ui/Icons";
 import Parallax from "../components/motion/Parallax";
 import { ArrowRight } from "../components/ui/Icons";
 import Reveal from "../components/motion/Reveal";
-import { CONTACT, IMAGES } from "../lib/data";
+import category from "@/data/category.json";
+const { CONTACT, IMAGES } = category;
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = { title: "Contact" };

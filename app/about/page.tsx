@@ -6,7 +6,8 @@ import PageHero from "../components/sections/PageHero";
 import SectionHeading from "../components/sections/SectionHeading";
 import Counter from "../components/motion/Counter";
 import Reveal from "../components/motion/Reveal";
-import { IMAGES, MILESTONES, STATS, VALUES } from "../lib/data";
+import category from "@/data/category.json";
+const { IMAGES, MILESTONES, STATS, VALUES } = category;
 import Link from "next/link";
 import { ArrowRight } from "../components/ui/Icons";
 
@@ -64,20 +65,14 @@ export default function AboutPage() {
                 keeping your interests at the heart of every decision.
               </p>
 
-              <Link
-                href="/about"
-                className="group mt-7 inline-flex items-center gap-3 border-b border-ink pb-2 text-sm font-medium transition-colors hover:border-gold hover:text-gold-deep"
-              >
-                Discover Our Story
-                <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
+            
             </Reveal>
           </div>
         </section>
 
 
       {/* Values — word over photo */}
-      <section className="shell">
+      <section className="shell px-10 py-10">
         <SectionHeading eyebrow="What guides us" title="Our" accent="Values" align="center" />
         <div className="mt-[clamp(40px,4.5vw,56px)] grid gap-4 md:grid-cols-3">
           {VALUES.map((v, i) => (
@@ -100,7 +95,7 @@ export default function AboutPage() {
       </section>
 
       {/* Milestones */}
-      <section className="shell py-16 px-10">
+      {/* <section className="shell py-16 px-10">
         <SectionHeading eyebrow="Our journey" title="Milestones" />
         <div className="mt-[clamp(40px,4.5vw,56px)] grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {MILESTONES.map((m, i) => (
@@ -117,22 +112,9 @@ export default function AboutPage() {
             </Reveal>
           ))}
         </div>
-      </section>
+      </section> */}
 
-      {/* Stats on sand */}
-      <section className="bg-sand py-[clamp(72px,9vw,128px)]">
-        <div className="shell grid grid-cols-2 gap-y-12 lg:grid-cols-4">
-          {STATS.map((s, i) => (
-            <Reveal key={s.label} delay={i * 120} className="text-center">
-              <p className="font-serif text-[clamp(48px,5vw,72px)] leading-none font-semibold text-gold">
-                <Counter value={s.value} suffix={s.suffix} />
-              </p>
-              <p className="mt-3 text-[11px] tracking-[0.28em] text-muted uppercase">{s.label}</p>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
+    
      
 
       <CtaBanner image={IMAGES.meetingRoom} />

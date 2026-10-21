@@ -5,7 +5,10 @@ import CtaBanner from "../components/sections/CtaBanner";
 import PageHero from "../components/sections/PageHero";
 import { ArrowRight, PracticeIcon } from "../components/ui/Icons";
 import Reveal from "../components/motion/Reveal";
-import { IMAGES, PRACTICE } from "../lib/data";
+import category from "@/data/category.json";
+import type { PracticeArea } from "@/types";
+const { IMAGES } = category;
+const PRACTICE = category.PRACTICE as PracticeArea[];
 
 export const metadata: Metadata = { title: "Practice Areas" };
 

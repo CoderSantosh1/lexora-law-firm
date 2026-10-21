@@ -4,7 +4,8 @@ import Link from "next/link";
 import Reveal from "../components/motion/Reveal";
 import PageHero from "../components/sections/PageHero";
 import { ArrowRight } from "../components/ui/Icons";
-import { CONTACT, IMAGES } from "../lib/data";
+import category from "@/data/category.json";
+const { CONTACT, IMAGES } = category;
 import FaqList from "./FaqList";
 
 export const metadata: Metadata = { title: "FAQ" };

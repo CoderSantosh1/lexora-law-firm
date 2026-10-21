@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
-import { IMAGES } from "../../lib/data";
+import category from "@/data/category.json";
+const { IMAGES } = category;
 import { ArrowLeft, ArrowRight } from "../ui/Icons";
 
 const SLIDES = [
   {
-    image: "/home/Collaborative%20Legal%20Consultation%20in%20a%20Modern%20Office.png",
+    image: "/images/hero/consultation.png",
     alt: "Lexora attorneys in a client consultation",
     line1: "Guiding Your",
     line2: "Next Chapter",

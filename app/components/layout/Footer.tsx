@@ -1,4 +1,5 @@
-import { CONTACT, NAV, PRACTICE } from "../../lib/data";
+import category from "@/data/category.json";
+const { CONTACT, NAV, PRACTICE } = category;
 import FooterColumn from "./FooterColumn";
 import Logo from "./Logo";
 

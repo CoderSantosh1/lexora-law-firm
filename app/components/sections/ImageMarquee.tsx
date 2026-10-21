@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { GALLERY } from "../../lib/data";
+import category from "@/data/category.json";
+const { GALLERY } = category;
 
 /** Endless row of photos, Wix "image strip" style. */
 export default function ImageMarquee({ images = GALLERY.map((g) => g.image) }: { images?: string[] }) {

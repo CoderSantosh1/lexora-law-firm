@@ -1,4 +1,4 @@
-import type { IconName } from "../../lib/data";
+import type { IconName } from "../../../types";
 
 type P = { className?: string };
 const base = {

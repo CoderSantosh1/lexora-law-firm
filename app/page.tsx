@@ -8,7 +8,10 @@ import { ArrowRight, PracticeIcon } from "./components/ui/Icons";
 import Counter from "./components/motion/Counter";
 import Parallax from "./components/motion/Parallax";
 import Reveal from "./components/motion/Reveal";
-import { IMAGES, INSIGHTS, PRACTICE, STATS, TEAM } from "./lib/data";
+import category from "@/data/category.json";
+import type { PracticeArea } from "@/types";
+const { IMAGES, INSIGHTS, STATS, TEAM } = category;
+const PRACTICE = category.PRACTICE as PracticeArea[];
 
 
 export default function Home() {
@@ -143,8 +146,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Photo strip */}
-      <ImageMarquee />
+     
 
       {/* Insights preview */}
       <section className="shell py-16 px-10">
@@ -158,8 +160,8 @@ export default function Home() {
         </div>
         <div className="mt-[clamp(40px,4.5vw,56px)] grid gap-8 md:grid-cols-3">
           {INSIGHTS.slice(0, 3).map((a, i) => (
-            <Reveal key={a.title} as="article" delay={i * 120} className="group">
-              <Link href="/insights" className="block">
+            <Reveal key={a.slug} as="article" delay={i * 120} className="group">
+              <Link href={`/insights/${a.slug}`} className="block">
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
                   <Image
                     src={a.image}
@@ -172,7 +174,9 @@ export default function Home() {
                     {a.tag}
                   </span>
                 </div>
-                <p className="mt-4 text-xs text-muted">{a.date}</p>
+                <p className="mt-4 text-xs text-muted">
+                  {a.date} · {a.readTime}
+                </p>
                 <h3 className="mt-1 font-serif text-2xl leading-snug font-semibold transition-colors group-hover:text-gold-deep">
                   {a.title}
                 </h3>

@@ -4,7 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { CONTACT, IMAGES, NAV, PRACTICE } from "../../lib/data";
+import category from "@/data/category.json";
+import type { PracticeArea } from "@/types";
+const { CONTACT, IMAGES, NAV } = category;
+const PRACTICE = category.PRACTICE as PracticeArea[];
 import Logo from "./Logo";
 import { ArrowRight, Chevron, PracticeIcon } from "../ui/Icons";
 

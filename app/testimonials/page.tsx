@@ -4,7 +4,8 @@ import Reveal from "../components/motion/Reveal";
 import CtaBanner from "../components/sections/CtaBanner";
 import PageHero from "../components/sections/PageHero";
 import SectionHeading from "../components/sections/SectionHeading";
-import { IMAGES, TESTIMONIALS } from "../lib/data";
+import category from "@/data/category.json";
+const { IMAGES, TESTIMONIALS } = category;
 import TestimonialCarousel from "./TestimonialCarousel";
 
 export const metadata: Metadata = { title: "Testimonials" };
@@ -28,19 +29,7 @@ export default function TestimonialsPage() {
         </Reveal>
       </section>
 
-      {/* Numbers */}
-      <section className="bg-sand py-[clamp(72px,9vw,128px)]">
-        <div className="shell grid gap-y-10 sm:grid-cols-3">
-          {STATS.map((s, i) => (
-            <Reveal key={s.label} delay={i * 120} className={`text-center ${i ? "sm:border-l sm:border-line" : ""}`}>
-              <p className="font-serif text-[clamp(48px,5vw,72px)] leading-none font-semibold text-gold">
-                {s.display ?? <Counter value={s.value} suffix={s.suffix} />}
-              </p>
-              <p className="mt-3 text-[11px] tracking-[0.28em] text-muted uppercase">{s.label}</p>
-            </Reveal>
-          ))}
-        </div>
-      </section>
+     
 
       <CtaBanner image={IMAGES.meetingTable} />
     </>
