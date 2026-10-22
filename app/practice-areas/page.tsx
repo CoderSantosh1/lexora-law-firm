@@ -38,7 +38,6 @@ export default function PracticeAreasPage() {
             </Reveal>
             <Reveal delay={150} className="lg:col-span-5">
               <p className="flex items-center gap-4 text-gold">
-                <span className="font-serif text-6xl leading-none font-semibold text-stone">0{i + 1}</span>
                 <PracticeIcon name={p.icon} className="size-9" />
               </p>
               <h2 className="mt-5 font-serif text-[clamp(38px,4.5vw,60px)] leading-[1] font-semibold">{p.title}</h2>

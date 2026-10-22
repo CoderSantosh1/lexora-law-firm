@@ -82,7 +82,6 @@ async function PracticeDetail({ params }: Pick<PageProps<"/practice-areas/[slug]
                 delay={(i % 3) * 100}
                 className="rounded-2xl border border-line bg-ivory p-7 transition-[translate,box-shadow] duration-500 hover:-translate-y-1 hover:shadow-[0_24px_50px_-30px_rgba(60,42,22,0.45)]"
               >
-                <span className="text-xs tracking-[0.2em] text-gold">0{i + 1}</span>
                 <h3 className="mt-3 font-serif text-2xl font-semibold">{s.name}</h3>
                 <p className="mt-2 text-[15px] leading-relaxed text-muted">{s.text}</p>
               </Reveal>

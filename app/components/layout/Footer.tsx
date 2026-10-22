@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-sand ">
       <div className="shell">
-        <div className="grid gap-12 border-b border-line pt-16 pb-10 md:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
+        <div className="grid gap-12 border-b border-line py-16 md:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div>
             <Logo />
             <p className="mt-5 max-w-xs font-serif text-2xl leading-snug text-ink-soft">Trusted counsel since 1998.</p>

@@ -47,7 +47,7 @@ export default function Home() {
       </section>
 
       {/* Practice areas — tall photo cards */}
-      <section className="shell py-10">
+      <section className="shell pb-16">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="What we do" title="Practice" accent="Areas" />
           <Reveal>
@@ -90,7 +90,7 @@ export default function Home() {
         <Parallax>
           <Image src={IMAGES.columns} alt="" fill sizes="100vw" className="object-cover" />
         </Parallax>
-        <div className="shell relative flex h-full items-end justify-end pb-[clamp(40px,4.5vw,56px)]">
+        <div className="shell relative flex h-full items-end justify-end pb-16">
           <Reveal className="max-w-md rounded-2xl bg-ivory/95 p-8 backdrop-blur-sm sm:p-10">
             <p className="font-serif text-[clamp(30px,3.6vw,46px)] leading-[1.1] italic">
               “Excellence is not an act, <span className="text-gold">it is our habit.</span>”
@@ -100,12 +100,12 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="shell grid grid-cols-2 border-b border-line lg:grid-cols-4">
+      <section className="shell grid grid-cols-2 lg:grid-cols-4">
         {STATS.map((s, i) => (
           <Reveal
             key={s.label}
             delay={i * 120}
-            className={`py-[clamp(40px,4.5vw,56px)] text-center ${i % 2 ? "border-l border-line" : ""} ${i === 2 ? "lg:border-l" : ""} ${i > 1 ? "border-t border-line lg:border-t-0" : ""}`}
+            className={`py-16 text-center ${i % 2 ? "border-l border-line" : ""} ${i === 2 ? "lg:border-l" : ""} ${i > 1 ? "border-t border-line lg:border-t-0" : ""}`}
           >
             <p className="font-serif text-[clamp(48px,5vw,72px)] leading-none font-semibold text-gold">
               <Counter value={s.value} suffix={s.suffix} />
@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* Team preview */}
-      <section className="shell py-10">
+      <section className="shell pb-16">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="The counsel" title="Meet the" accent="Team" />
           <Reveal>
@@ -149,7 +149,7 @@ export default function Home() {
      
 
       {/* Insights preview */}
-      <section className="shell py-10">
+      <section className="shell pb-16">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="Journal" title="Latest" accent="Insights" />
           <Reveal>

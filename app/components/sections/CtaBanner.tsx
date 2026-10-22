@@ -14,7 +14,7 @@ export default function CtaBanner({
   image?: string;
 }) {
   return (
-    <section className="relative h-[360px] min-h-[320px] overflow-hidden sm:h-[200px] lg:h-[300px]">
+    <section className="relative overflow-hidden py-16">
       <Parallax>
         <Image
           src={Banner}
@@ -27,7 +27,7 @@ export default function CtaBanner({
 
       <div className="absolute inset-0 bg-ink/45" />
 
-      <div className="shell relative flex h-full items-center justify-center py-5">
+      <div className="shell relative flex items-center justify-center">
         <Reveal className="mx-auto max-w-2xl text-center text-ivory">
           <h2 className="mt-2 font-serif text-[clamp(32px,4.5vw,56px)] leading-[1.08] font-medium">
             The Right Guidance.

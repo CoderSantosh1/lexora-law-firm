@@ -44,7 +44,7 @@ export default function InsightPage({
 
 function ArticleSkeleton() {
   return (
-    <section className="shell py-24">
+    <section className="shell pt-24 pb-16">
       <div className="grid items-center gap-8 lg:grid-cols-2">
         <div className="space-y-5">
           <div className="h-4 w-32 animate-pulse rounded bg-sand" />
@@ -86,10 +86,10 @@ async function Article({
       <ReadingProgress />
 
       {/* Article hero */}
-      <section className="relative overflow-hidden bg-sand/30">
-        <div className="shell py-10 sm:py-14 lg:py-16">
+      <section className="relative overflow-hidden bg-sand/30 pt-24 pb-16">
+        <div className="shell">
           
-          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16 pt-10">
+          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
             {/* Left: article information */}
             <Reveal className="order-2 lg:order-1">
               <p className="flex items-center gap-3 text-[10px] font-medium tracking-[0.28em] text-gold-deep uppercase">

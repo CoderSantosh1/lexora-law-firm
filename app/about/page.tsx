@@ -72,7 +72,7 @@ export default function AboutPage() {
 
 
       {/* Values — word over photo */}
-      <section className="shell py-16">
+      <section className="shell pb-16">
         <SectionHeading eyebrow="What guides us" title="Our" accent="Values" align="center" />
         <div className="mt-[clamp(40px,4.5vw,56px)] grid gap-4 md:grid-cols-3">
           {VALUES.map((v, i) => (
