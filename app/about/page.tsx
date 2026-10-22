@@ -20,7 +20,7 @@ export default function AboutPage() {
 
       {/* Story — overlapping photos */}
     
-        <section className="shell grid items-center gap-16 py-[clamp(72px,9vw,128px)] lg:grid-cols-2">
+        <section className="shell grid items-center gap-16 py-16 lg:grid-cols-2">
           <div className="relative pb-[clamp(40px,4.5vw,56px)]">
             <Reveal
               variant="clip"

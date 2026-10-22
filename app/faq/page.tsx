@@ -15,7 +15,7 @@ export default function FaqPage() {
     <>
       <PageHero eyebrow="Help centre" title="FAQ" line="Quick answers to common questions." image={IMAGES.library} />
 
-      <section className="shell grid items-start gap-12 py-[clamp(72px,9vw,128px)] lg:grid-cols-[1fr_2fr] lg:gap-16">
+      <section className="shell grid items-start gap-12 py-16 lg:grid-cols-[1fr_2fr] lg:gap-16">
         {/* Still have questions? */}
         <Reveal className="overflow-hidden rounded-2xl border border-line bg-white lg:sticky lg:top-28">
           <div className="relative h-48">

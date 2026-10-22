@@ -48,7 +48,7 @@ async function PracticeDetail({ params }: Pick<PageProps<"/practice-areas/[slug]
       <PageHero compact eyebrow="Practice Area" title={area.title} line={area.line} image={area.image} />
 
       {/* Overview + key facts */}
-      <section className="shell grid items-start gap-16 py-[clamp(72px,9vw,128px)] lg:grid-cols-[1.15fr_1fr]">
+      <section className="shell grid items-start gap-16 py-16 lg:grid-cols-[1.15fr_1fr]">
         <Reveal>
           <PracticeIcon name={area.icon} className="size-10 text-gold" />
           <p className="mt-6 flex items-center gap-3 text-[11px] font-medium tracking-[0.3em] text-gold-deep uppercase">

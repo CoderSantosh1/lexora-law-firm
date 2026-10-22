@@ -22,7 +22,7 @@ export default function TestimonialsPage() {
       <PageHero eyebrow="Client stories" title="Testimonials" line="In our clients' own words." image={IMAGES.handshake} />
 
       {/* All reviews — one auto-scrolling row */}
-      <section className="shell py-[clamp(72px,9vw,128px)]">
+      <section className="shell py-16">
         <SectionHeading eyebrow="Reviews" title="What clients" accent="say" />
         <Reveal className="mt-[clamp(40px,4.5vw,56px)]">
           <TestimonialCarousel items={TESTIMONIALS} />

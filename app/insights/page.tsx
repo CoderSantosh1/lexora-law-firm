@@ -15,10 +15,10 @@ export default function InsightsPage() {
     <>
       <PageHero eyebrow="Journal" title="Insights" line="Short reads from our attorneys." image={IMAGES.documents} />
 
-      <section className="shell py-10">
+      <section className="shell py-16">
         
         {/* Article grid */}
-        <div className="mt-[clamp(72px,9vw,128px)] grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
           {INSIGHTS.map((a, i) => (
             <Reveal key={a.slug} as="article" delay={(i % 3) * 120} className="group">
               <Link href={`/insights/${a.slug}`} className="block">

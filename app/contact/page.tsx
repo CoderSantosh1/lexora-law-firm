@@ -71,7 +71,7 @@ export default function ContactPage() {
       
         {/* Where to find us */}
         <section className="relative overflow-hidden bg-ivory py-16 sm:py-5">
-          <div className="shell">
+          <div className="">
             
 
             <div className="relative h-[420px] overflow-hidden rounded-2xl border border-line sm:h-[520px]">
