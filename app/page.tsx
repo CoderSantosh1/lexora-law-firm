@@ -47,7 +47,7 @@ export default function Home() {
       </section>
 
       {/* Practice areas — tall photo cards */}
-      <section className="shell py-16">
+      <section className="shell py-10">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="What we do" title="Practice" accent="Areas" />
           <Reveal>
@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* Team preview */}
-      <section className="shell py-16">
+      <section className="shell py-10">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="The counsel" title="Meet the" accent="Team" />
           <Reveal>
@@ -149,7 +149,7 @@ export default function Home() {
      
 
       {/* Insights preview */}
-      <section className="shell py-16">
+      <section className="shell py-10">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="Journal" title="Latest" accent="Insights" />
           <Reveal>
