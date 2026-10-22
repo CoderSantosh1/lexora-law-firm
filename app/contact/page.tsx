@@ -22,7 +22,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Split: photo left, form right */}
-      <section className="shell grid gap-10 pt-24 pb-[clamp(72px,9vw,128px)] lg:grid-cols-2 lg:gap-16">
+      <section className="shell grid gap-10 pt-24 pb-16 lg:grid-cols-2 lg:gap-16">
         <div className="relative h-[60svh] min-h-[420px] overflow-hidden rounded-2xl lg:sticky lg:top-24 lg:h-[calc(100svh-120px)]">
           <div className="absolute inset-0 animate-zoom-out">
             <Image src={IMAGES.officeWindow} alt="Lexora reception" fill preload sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
@@ -70,7 +70,7 @@ export default function ContactPage() {
 
       
         {/* Where to find us */}
-        <section className="relative overflow-hidden bg-ivory py-16 sm:py-5">
+        <section className="relative overflow-hidden bg-ivory pb-16">
           <div className="">
             
 

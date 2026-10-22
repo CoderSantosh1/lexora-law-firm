@@ -11,9 +11,7 @@ export default function GalleryPage() {
   return (
     <>
       <PageHero eyebrow="Inside Lexora" title="Gallery" line="Our spaces, our moments." image={IMAGES.officeLoft} />
-      <section className="shell ">
-        <GalleryGrid />
-      </section>
+      <GalleryGrid />
       <CtaBanner image={IMAGES.handshake} />
     </>
   );

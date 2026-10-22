@@ -131,7 +131,7 @@ async function Article({
       </section>
 
       {/* Article content */}
-      <section className="shell py-12 sm:py-16 lg:py-10">
+      <section className="shell py-16">
         <article className="mx-auto max-w-3xl">
           {article.body.map((block, index) => (
             <Reveal key={index} delay={Math.min(index * 40, 160)}>

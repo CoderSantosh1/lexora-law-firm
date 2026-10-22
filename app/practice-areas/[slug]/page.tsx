@@ -72,7 +72,7 @@ async function PracticeDetail({ params }: Pick<PageProps<"/practice-areas/[slug]
       </section>
 
       {/* What we handle */}
-      <section className="bg-sand py-[clamp(72px,9vw,128px)]">
+      <section className="bg-sand py-16">
         <div className="shell">
           <SectionHeading eyebrow="What we handle" title="How we" accent="help" />
           <div className="mt-[clamp(40px,4.5vw,56px)] grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

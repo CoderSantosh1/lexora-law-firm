@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter, Playfair_Display } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import "./globals.css";
@@ -9,13 +9,6 @@ const serif = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["500", "600", "700"],
   style: ["normal", "italic"],
-});
-
-// High-contrast display serif for the home hero headline
-const display = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  weight: ["400", "500"],
 });
 
 const sans = Inter({
@@ -33,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} ${display.variable}`}>
+    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <body>
         <Header />
         <main>{children}</main>

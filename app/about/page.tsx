@@ -72,7 +72,7 @@ export default function AboutPage() {
 
 
       {/* Values — word over photo */}
-      <section className="shell px-10 py-10">
+      <section className="shell py-16">
         <SectionHeading eyebrow="What guides us" title="Our" accent="Values" align="center" />
         <div className="mt-[clamp(40px,4.5vw,56px)] grid gap-4 md:grid-cols-3">
           {VALUES.map((v, i) => (
@@ -95,7 +95,7 @@ export default function AboutPage() {
       </section>
 
       {/* Milestones */}
-      {/* <section className="shell py-16 px-10">
+      {/* <section className="shell py-16">
         <SectionHeading eyebrow="Our journey" title="Milestones" />
         <div className="mt-[clamp(40px,4.5vw,56px)] grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {MILESTONES.map((m, i) => (

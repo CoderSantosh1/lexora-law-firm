@@ -15,7 +15,7 @@ export default function TeamPage() {
     <>
       <PageHero eyebrow="The counsel" title="Our Team" line="Forty minds. One table." image={IMAGES.meetingTeam} />
 
-      <section className="shell py-16 px-10">
+      <section className="shell py-16">
         <SectionHeading eyebrow="Partners & associates" title="Meet the" accent="Attorneys" />
         <div className="mt-[clamp(40px,4.5vw,56px)] grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-4">
           {TEAM.map((m, i) => (

@@ -18,7 +18,7 @@ export default function PracticeAreasPage() {
       <PageHero eyebrow="What we do" title="Practice Areas" line="Five disciplines. One standard." image={IMAGES.library} />
 
       {/* Zig-zag photo rows */}
-      <section className="shell space-y-[clamp(72px,9vw,128px)] py-16">
+      <section className="shell space-y-16 py-16">
         {PRACTICE.map((p, i) => (
           <div key={p.slug} className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
             <Reveal

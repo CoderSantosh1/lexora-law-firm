@@ -22,7 +22,7 @@ export default function BookConsultationPage() {
         image={IMAGES.officeWindow}
       />
 
-      <section className="shell py-[clamp(48px,7vw,88px)]">
+      <section className="shell py-16">
         <Reveal className="mx-auto w-full max-w-2xl">
           <div className="mb-8 text-center">
             <h2 className="font-serif text-3xl font-medium sm:text-4xl">

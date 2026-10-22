@@ -41,7 +41,7 @@ export default function GalleryGrid() {
 
   return (
     <>
-      <section className="shell py-12 sm:py-16 lg:py-16">
+      <section className="shell py-16">
         {/* Gallery Heading */}
         <div className="mb-10 sm:mb-14">
           <p className="flex items-center gap-3 text-[10px] font-semibold tracking-[0.3em] text-gold-deep uppercase sm:text-xs">
