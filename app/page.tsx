@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* Team preview */}
-      <section className="shell pb-16 pt-16">
+      <section className="shell pb-16 pt-12">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="The counsel" title="Meet the" accent="Team" />
           <Reveal>
@@ -149,7 +149,7 @@ export default function Home() {
      
 
       {/* Insights preview */}
-      <section className="shell pb-22">
+      <section className="shell pb-20">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="Journal" title="Latest" accent="Insights" />
           <Reveal>
