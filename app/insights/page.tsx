@@ -33,7 +33,7 @@ export default function InsightsPage() {
                 <span className="absolute top-4 left-4 rounded-full bg-ivory/95 px-3 py-1 text-[11px] font-medium">{a.tag}</span>
               </div>
               <p className="mt-4 text-xs text-muted">
-                {a.date} · {a.readTime}
+                {a.date} 
               </p>
               <h3 className="mt-1 font-serif text-2xl leading-snug font-semibold transition-colors group-hover:text-gold-deep">
                 {a.title}

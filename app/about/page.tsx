@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import CtaBanner from "../components/sections/CtaBanner";
-import ImageMarquee from "../components/sections/ImageMarquee";
+import OurMission from "../components/sections/OurMission";
 import PageHero from "../components/sections/PageHero";
 import SectionHeading from "../components/sections/SectionHeading";
 import Counter from "../components/motion/Counter";
@@ -69,8 +69,7 @@ export default function AboutPage() {
             </Reveal>
           </div>
         </section>
-
-
+       
       {/* Values — word over photo */}
       <section className="shell pb-16">
         <SectionHeading eyebrow="What guides us" title="Our" accent="Values" align="center" />
@@ -93,9 +92,12 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
-
+          {/* Our Mission */}
+        
+          <OurMission image={IMAGES.meetingTable} />        
+    
       {/* Milestones */}
-      {/* <section className="shell py-16">
+      <section className="shell pb-16">
         <SectionHeading eyebrow="Our journey" title="Milestones" />
         <div className="mt-[clamp(40px,4.5vw,56px)] grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {MILESTONES.map((m, i) => (
@@ -112,7 +114,7 @@ export default function AboutPage() {
             </Reveal>
           ))}
         </div>
-      </section> */}
+      </section>
 
     
      
